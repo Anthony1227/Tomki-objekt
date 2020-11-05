@@ -11,6 +11,11 @@ namespace Tomki_objekt
         class Person
         {
             public string förnamn, efternamn;
+            public void Print()
+            {
+                Console.WriteLine($"{förnamn}, {efternamn}");
+                
+            }
         }
         static void Main(string[] args)
         {
@@ -20,11 +25,13 @@ namespace Tomki_objekt
                 förnamn = "Kalle",
                 efternamn = "Anka"
             };
+            P.Print();
             Person Q = new Person()
             {
                 förnamn = "Kajsa",
                 efternamn = "Anka"
             };
+            Q.Print();
         }
     }
 }
